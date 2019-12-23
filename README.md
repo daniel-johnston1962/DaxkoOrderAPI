@@ -1,6 +1,6 @@
 # DaxkoOrderAPI
 
-This is a .Net Core 3.0 Restful Web API.  This project was for a interview for a local company. 
+This is a .Net Core 3.1 Restful Web API.  This project was for a interview for a local company. 
 
 ### SQL 
 
