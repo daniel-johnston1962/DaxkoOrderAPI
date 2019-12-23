@@ -1,13 +1,45 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0"?>
 <doc>
-  <assembly>
-    <name>DaxkoOrderAPI</name>
-  </assembly>
-  <members>
-    <member name="M:DaxkoOrderAPI.Controllers.HealthController.Get()">
-      <summary>
-        Query to current DateTime
-      </summary>
-    </member>
-  </members>
+    <assembly>
+        <name>DaxkoOrderAPI</name>
+    </assembly>
+    <members>
+        <member name="T:DaxkoOrderAPI.Controllers.HealthController">
+            <summary>
+            Health Controller
+            </summary>
+        </member>
+        <member name="M:DaxkoOrderAPI.Controllers.HealthController.Get">
+            <summary>
+            Gets the current DateTime
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DaxkoOrderAPI.Controllers.OrdersController.Items">
+            <summary>
+            Gets the list of Items currently for sale
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DaxkoOrderAPI.Controllers.OrdersController.Item(System.Int64)">
+            <summary>
+            Gets the Item by ID
+            </summary>
+            <param name="ItemID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DaxkoOrderAPI.Controllers.OrdersController.PastOrders">
+            <summary>
+            Gets the list of Past Orders
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DaxkoOrderAPI.Controllers.OrdersController.OrderedItems(System.Collections.Generic.List{DaxkoOrderAPI.Features.Commands.OrderCommand})">
+            <summary>
+            Enters a new Order of Items
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+    </members>
 </doc>

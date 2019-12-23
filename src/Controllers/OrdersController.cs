@@ -28,6 +28,10 @@ namespace DaxkoOrderAPI.Controllers
             _urlHelper = urlHelper;
         }
 
+        /// <summary>
+        /// Gets the list of Items currently for sale
+        /// </summary>
+        /// <returns></returns>
         [ProducesResponseType(typeof(List<OrderItemDto>), 200)]
         [ProducesResponseType(400)]
         [Route("Items")]
@@ -38,6 +42,11 @@ namespace DaxkoOrderAPI.Controllers
             return Ok(result);
         }
 
+        /// <summary>
+        /// Gets the Item by ID
+        /// </summary>
+        /// <param name="ItemID"></param>
+        /// <returns></returns>
         [ProducesResponseType(typeof(OrderItemDto), 200)]
         [ProducesResponseType(400)]
         [Route("Item/{ItemID}")]
@@ -48,6 +57,10 @@ namespace DaxkoOrderAPI.Controllers
             return Ok(result);
         }
 
+        /// <summary>
+        /// Gets the list of Past Orders
+        /// </summary>
+        /// <returns></returns>
         [ProducesResponseType(typeof(PastOrdersDto), 200)]
         [ProducesResponseType(400)]
         [Route("PastOrders")]
@@ -58,6 +71,11 @@ namespace DaxkoOrderAPI.Controllers
             return Ok(result);
         }
 
+        /// <summary>
+        /// Enters a new Order of Items
+        /// </summary>
+        /// <param name="command"></param>
+        /// <returns></returns>
         [ProducesResponseType(typeof(long), 200)]
         [ProducesResponseType(400)]
         [Route("Order")]
