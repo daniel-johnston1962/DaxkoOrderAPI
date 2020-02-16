@@ -8,6 +8,10 @@ This is a .Net Core 3.1 Restful Web API.  This project was for a interview for a
 
 -- CREATE SCHEMA Orders 
 
+DROP TABLE IF EXISTS [Daxko].[Orders].[Item]
+DROP TABLE IF EXISTS [Daxko].[Orders].[OrderDetail]
+DROP TABLE IF EXISTS [Daxko].[Orders].[ShippedOrder]
+
 CREATE TABLE  [Daxko].[Orders].[Item]
 (
 	[ID] [bigint] IDENTITY(1,1) NOT NULL PRIMARY KEY,
